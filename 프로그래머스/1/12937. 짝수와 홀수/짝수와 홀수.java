@@ -1,11 +1,13 @@
 class Solution {
-    public String solution(int num) {
-        String answer = "";
+    public String evenOrOdd(int num) {
         if (num%2==0) {
-            answer = "Even";
+            return "Even";
         } else {
-            answer = "Odd";
+            return "Odd";
         }
-        return answer;
+    }
+    
+    public String solution(int num) {
+        return evenOrOdd(num);
     }
 }
