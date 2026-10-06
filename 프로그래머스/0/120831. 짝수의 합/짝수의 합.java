@@ -4,13 +4,8 @@ class Solution {
         boolean limitCheck = (0 < n && n <= 1000);
         
         if(limitCheck) {
-            if (n%2 == 1) {
-                n -= 1;
-            }
-        
-            while(n>0) {
-                answer += n;
-                n -= 2;
+            for (int i=2; i<=n; i+=2) {
+                answer += i;
             }
         }
         return answer;
